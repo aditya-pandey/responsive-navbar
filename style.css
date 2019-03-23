@@ -3,32 +3,46 @@
     background-color: cadetblue;
     top: 0;
     left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     padding-right: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
+
 .navbar{
-    height: 48px;
+    height: 40px;
     width: 100%;
-    background: black;
-    opacity: 0.9;
-    border: 1px aolid black;
+    background-color: rgba(45,45,45,0.98);
+    
+    box-shadow: 1px 0px 1px rgba(45,45,45,0.5);
 }
-#home{
+#home,.home{
     position: absolute;
     text-align: center;    
     color: white;
-    width: 90px;
+    width: 100px;
     height: 35px;
 } 
+.home{
+    display: block;
+    position: absolute;
+        color: lightcyan;
+        font-size: 1.6em;
+        width: 35px;
+        text-align: center;
+        height: 30px;
+        padding-top:0px;
+        align-content: center;
+        border: 1px solid lightslategray; 
+}
 nav > a{
     display: block;
-    color: black;
-    font-size: 20px;
+    font-size: 14px;
     padding-top: 10px;
     text-decoration: none;     
 }
+
 .navs{
     float: right;
     padding-right: 10px; 
@@ -40,7 +54,7 @@ nav > a{
 }
 .navs:hover{
     cursor: pointer;
-    border-bottom: 1px solid white;
+    color: hsla(0,0%,100%,.7);
 }
 #hamburger{
     display: none;
@@ -67,19 +81,25 @@ nav > a{
         display: block;
         color: lightcyan;
         font-size: 1.6em;
-        width: 50px;
+        width: 35px;
         text-align: center;
-        height: 40px;
-        padding-top:8px;
+        height: 30px;
+        padding-top:0px;
+        align-content: center;
         border: 1px solid lightslategray; 
         border-radius: 5px;
         margin-right: 12px;
+        padding-bottom: 5px;
+        transition: color 1s;
+    }
+    .fa-bars:hover{
+        color:grey;
     }
     .mob{
        /* display: block; */
         opacity: 0;
         width: 100%;
-        background-color: darkslategray;
+        background-color:rgba(45,45,45,0.98);
         left: 0;
         top: 0;
         padding: 10px;
@@ -88,14 +108,23 @@ nav > a{
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         display: block;
+        
     }
     .mob-navs{
         display: block;
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         text-decoration: none;
         margin: 0;
-        padding-bottom: 10px;
-        margin-bottom: 0; 
+        width: 90%;
+        height: 35px;
+        line-height: 1.5;
+        margin-bottom: 0;
+        border-top: 1px solid #444d56;
+        padding-bottom: 0; 
     }
+    .mob-navs:hover{
+        color: hsla(0,0%,100%,.7);
+    }
+    
 }
